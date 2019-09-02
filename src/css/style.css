@@ -1,0 +1,75 @@
+body{
+    overflow-x: hidden;
+    font-family: 'Lato',sans-serif;
+    color: #505962;
+}
+
+/*==================Navigation CSS====================*/
+.navbar{
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-brand{
+    height: 3rem;
+    font-size: 2rem;
+
+}
+.navbar-nav li{
+    padding-right: .8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .1rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color :white;
+    padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link :hover{
+    color: greenyellow; 
+}
+
+
+/* ========LANDING PAGE========   */
+.home-inner{
+background-image: url("C:\Users\ELCOT\Desktop\EduGO\img\landing_page_img.jpg");    
+}
+
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+}
+.caption h1{
+    font-size: 3rem;
+    text-shadow: .1rem .1rem .5rem grey;
+    font-weight: 700;
+    letter-spacing: .1rem ;
+}
+.caption h3{
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: .1rem .05rem .1rem grey;
+    padding-bottom: 1.3rem;
+}
+.btn-lg{
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.7rem;
+    font-size: 1.5rem
+     
+}
+.img{
+    display: block;
+    max-width: 300%;
+    
+    margin-right: 50%;
+    width: 50%;
+}
+
