@@ -6,7 +6,7 @@
     <div class="website-logo">
         <a href="index.php">
             <div>
-                <img height="50px" src="images/logoLCO.svg" alt="logo">
+                <img height="50px" src="images/edugo_logo.svg" alt="logo">
 
             </div>
         </a>

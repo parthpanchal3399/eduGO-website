@@ -15,14 +15,14 @@
     
 
     <!-- Bootstrap CSS File -->
-    <link href="lib/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Libraries CSS Files -->
     
 
     <!-- Main Stylesheet File -->
-    <link href="lib/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 

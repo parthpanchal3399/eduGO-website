@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #e8e8e8;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        font-size: 125px;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #201d4a;
+        font-family: "Franklin Gothic Demi";
+      }
+
+      .cls-4 {
+        font-size: 233.333px;
+      }
+    </style>
+    <filter id="filter" x="433.938" y="0.094" width="164.125" height="602.812" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="3" in="SourceAlpha"/>
+      <feFlood result="flood" flood-opacity="0.38"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="3"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="0" y="0" width="164" height="603" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="3" in="SourceAlpha"/>
+      <feFlood result="flood" flood-opacity="0.38"/>
+      <feComposite result="composite" operator="out" in2="blur"/>
+      <feOffset result="offset" dy="3"/>
+      <feComposite result="composite-2" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M433.935,602.9L539,302,433.935,0.1h56.928l107.2,301.414L490.863,602.9H433.935Z"/>
+  <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-2" d="M164,603L59.018,302,164,0H107.118L0,301.51,107.118,603H164Z"/>
+  <text id="edu" class="cls-3" x="119.75" y="260.75">edu</text>
+  <text id="GO" class="cls-4" x="193.75" y="415.75">GO</text>
+</svg>
