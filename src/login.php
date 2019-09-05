@@ -21,10 +21,38 @@
             </div>
         </div>
 
-        <div class="col-lg-8"> <!-- Login Section -->
-            
+        <div class="col-lg-8 login-section"> <!-- Login Section -->
+            <div class="form-holder">   
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>eduGO</h3>
+                        <p>Learn Engineering Concepts on the GO!!</p>
+
+                        <div class="page-links">
+                            <a href="login.php" class="active">Login</a>
+                            <a href="signup.php">Sign-Up</a>
+                        </div>
+                        
+                        <div class="login-form">
+                            <form>
+                                <div class="form-group">
+                                    <label for="InputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="InputEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="InputPassword">Password</label>
+                                    <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    
 </div>
 
 
