@@ -29,22 +29,30 @@
                         <p>Learn Engineering Concepts on the GO!!</p>
 
                         <div class="page-links">
-                            <a href="login.php" class="active">Login</a>
-                            <a href="signup.php">Sign-Up</a>
+                            <a href="login.php">Login</a>
+                            <a href="signup.php" class="active">Sign-Up</a>
                         </div>
                         
                         <div class="login-form">
-                            LOGIN
+                            SIGN-UP
                             <form>
+                                <div class="form-group">
+                                    <label for="InputName">Name</label>
+                                    <input type="text" class="form-control" id="InputName" placeholder="Enter your Name">
+                                </div>
                                 <div class="form-group">
                                     <label for="InputEmail">Email address</label>
                                     <input type="email" class="form-control" id="InputEmail" placeholder="Enter your email">
                                 </div>
                                 <div class="form-group">
+                                    <label for="InputPhone">Phone Number</label>
+                                    <input type="text" class="form-control" id="InputPhone" placeholder="Enter your Phone Number">
+                                </div>
+                                <div class="form-group">
                                     <label for="InputPassword">Password</label>
                                     <input type="password" class="form-control" id="InputPassword" placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
                             </form>
                         </div>
                     </div>
