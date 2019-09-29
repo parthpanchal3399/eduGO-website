@@ -6,8 +6,7 @@
     <div class="website-logo">
         <a href="index.php">
             <div>
-                <img height="50px" src="images/edugo_logo.svg" alt="logo">
-
+                <img height="90px" src="images/logo2.png" alt="logo">
             </div>
         </a>
     </div>
@@ -34,17 +33,50 @@
                         </div>
                         
                         <div class="login-form">
-                            LOGIN
-                            <form>
+                            <h4>LOGIN</h4>
+                            <?php
+                                if(isset($_GET['error']))
+                                {
+                                    if($_GET['error'] == "emptyfields")
+                                    {
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                Fill out all the fields!
+                                            </div>';
+                                    }
+                                    else if($_GET['error'] == "wrongpwd")
+                                    {
+                                        // $c_name = $_GET['name'];
+                                        // $gst = $_GET['gst'];
+                                        // $addr = $_GET['addr'];
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                Invalid E-mail or Password!
+                                            </div>';
+                                    }
+                                    else if($_GET['error'] == "nouser")
+                                    {
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                User Not Found!
+                                            </div>';
+                                    }
+                                }
+                                else if(isset($_GET['login']) == "success")
+                                {
+                                    header("refresh:2; url=login.php");
+                                    echo '<div class="text-center alert alert-success" role="alert">
+                                                Login Successful! Redirecting .... 
+                                            </div>';
+                                }
+                            ?>
+                            <form action="includes/login.inc.php" method="POST">
                                 <div class="form-group">
                                     <label for="InputEmail">Email address</label>
-                                    <input type="email" class="form-control" id="InputEmail" placeholder="Enter your email">
+                                    <input type="email" class="form-control" id="InputEmail" name="email" placeholder="Enter your email">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputPassword">Password</label>
-                                    <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                                    <input type="password" class="form-control" id="InputPassword" name="pwd" placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn btn-primary">Login</button>
+                                <button type="submit" class="btn btn-primary" name="login-submit">Login</button>
                             </form>
                         </div>
                     </div>

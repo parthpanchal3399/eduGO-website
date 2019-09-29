@@ -56,32 +56,26 @@
                                     }
                                     else if($_GET['error'] == "invalid-email")
                                     {
-                                        // $c_name = $_GET['name'];
-                                        // $gst = $_GET['gst'];
-                                        // $addr = $_GET['addr'];
-                                        // $phone = $_GET['phone'];
                                         echo '<div class="text-center alert alert-danger" role="alert">
                                                 Invalid E-mail!
                                             </div>';
                                     }
                                     else if($_GET['error'] == "invalid-uname")
                                     {
-                                        // $c_name = $_GET['name'];
-                                        // $gst = $_GET['gst'];
-                                        // $addr = $_GET['addr'];
-                                        // $email = $_GET['email'];
                                         echo '<div class="text-center alert alert-danger" role="alert">
                                                 Invalid Name!
                                             </div>';
                                     }
                                     else if($_GET['error'] == "invalid-phone")
                                     {
-                                        // $c_name = $_GET['name'];
-                                        // $gst = $_GET['gst'];
-                                        // $addr = $_GET['addr'];
-                                        // $email = $_GET['email'];
                                         echo '<div class="text-center alert alert-danger" role="alert">
                                                 Invalid Phone!
+                                            </div>';
+                                    }
+                                    else if($_GET['error'] == "email-taken")
+                                    {
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                User with this E-mail already exists!
                                             </div>';
                                     }
                                 }
