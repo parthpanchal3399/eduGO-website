@@ -6,8 +6,7 @@
     <div class="website-logo">
         <a href="index.php">
             <div>
-                <img height="50px" src="images/edugo_logo.svg" alt="logo">
-
+                <img height="90px" src="images/logo2.png" alt="logo">
             </div>
         </a>
     </div>
@@ -21,6 +20,7 @@
             </div>
         </div>
 
+
         <div class="col-lg-8 login-section"> <!-- Signup Section -->
             <div class="form-holder">   
                 <div class="form-content">
@@ -32,9 +32,67 @@
                             <a href="login.php">Login</a>
                             <a href="signup.php" class="active">Sign-Up</a>
                         </div>
+
                         
                         <div class="login-form">
-                            SIGN-UP
+                            <h4>SIGN UP</h4>
+                            <?php
+                                if(isset($_GET['error']))
+                                {
+                                    if($_GET['error'] == "emptyfields")
+                                    {
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                Fill out all the fields!
+                                            </div>';
+                                    }
+                                    else if($_GET['error'] == "invalid-email-uname")
+                                    {
+                                        // $c_name = $_GET['name'];
+                                        // $gst = $_GET['gst'];
+                                        // $addr = $_GET['addr'];
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                Invalid Name and E-mail!
+                                            </div>';
+                                    }
+                                    else if($_GET['error'] == "invalid-email")
+                                    {
+                                        // $c_name = $_GET['name'];
+                                        // $gst = $_GET['gst'];
+                                        // $addr = $_GET['addr'];
+                                        // $phone = $_GET['phone'];
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                Invalid E-mail!
+                                            </div>';
+                                    }
+                                    else if($_GET['error'] == "invalid-uname")
+                                    {
+                                        // $c_name = $_GET['name'];
+                                        // $gst = $_GET['gst'];
+                                        // $addr = $_GET['addr'];
+                                        // $email = $_GET['email'];
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                Invalid Name!
+                                            </div>';
+                                    }
+                                    else if($_GET['error'] == "invalid-phone")
+                                    {
+                                        // $c_name = $_GET['name'];
+                                        // $gst = $_GET['gst'];
+                                        // $addr = $_GET['addr'];
+                                        // $email = $_GET['email'];
+                                        echo '<div class="text-center alert alert-danger" role="alert">
+                                                Invalid Phone!
+                                            </div>';
+                                    }
+                                }
+                                else if(isset($_GET['signup']) == "success")
+                                {
+                                    header("refresh:2; url=login.php");
+                                    echo '<div class="text-center alert alert-success" role="alert">
+                                                Sign Up Successful!
+                                            </div>';
+                                }
+                            ?>
                             <form action="includes/signup.inc.php" method="POST">
                                 <div class="form-group">
                                     <label for="InputName">Name</label>
@@ -46,7 +104,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="InputPhone">Phone Number</label>
-                                    <input type="text" class="form-control" id="InputPhone" placeholder="Enter your Phone Number" name="phone">
+                                    <input type="text" class="form-control" id="InputPhone" placeholder="Enter your Phone Number (Optional)" name="phone">
                                 </div>
                                 <div class="form-group">
                                     <label for="InputPassword">Password</label>

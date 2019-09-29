@@ -10,38 +10,23 @@
 
 
         // Validate Stuff
-        if(empty($uname) || empty($email) || empty($password) || empty($phone))
+        if(empty($uname) || empty($email) || empty($password))
         {
             header("Location: ../signup.php?error=emptyfields&uname=".$uname."&email=".$email."&phone=".$phone);
             exit();
         }
 
 
-        else if(!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9_ -]*$/", $uname) && strlen($phone) != 10)
-        {
-            header("Location: ../signup.php?error=invalid-email-uname-phone");
-            exit();
-        }
         else if(!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9_ -]*$/", $uname))
         {
             header("Location: ../signup.php?error=invalid-email-uname&phone=".$phone);
-            exit();
-        }
-        else if(!filter_var($email, FILTER_VALIDATE_EMAIL) && strlen($phone) != 10)
-        {
-            header("Location: ../signup.php?error=invalid-email-phone&uname=".$uname);
-            exit();
-        }
-        else if(!preg_match("/^[a-zA-Z0-9_ -]*$/", $uname) && strlen($phone) != 10)
-        {
-            header("Location: ../signup.php?error=invalid-name-phone&email=".$email);
             exit();
         }
 
 
         else if(!filter_var($email, FILTER_VALIDATE_EMAIL))
         {
-            header("Location: ../signup.php?error=invalid-email&uid=".$uname."&phone=".$phone);
+            header("Location: ../signup.php?error=invalid-email&uname=".$uname."&phone=".$phone);
             exit();
         }
         else if(!preg_match("/^[a-zA-Z0-9_ -]*$/", $uname))
@@ -49,7 +34,7 @@
             header("Location: ../signup.php?error=invalid-uname&email=".$email."&phone=".$phone);
             exit();
         }
-        else if(strlen($phone) != 10)
+        else if(!empty($phone) && strlen($phone) != 10)
         {
             header("Location: ../signup.php?error=invalid-phone&uname=".$uname."&email=".$email);
             exit();
@@ -98,5 +83,10 @@
                 }
             }
         }
+    }
+    else
+    {
+        header("Location: ../signup.php");
+        exit();
     }
 ?>
