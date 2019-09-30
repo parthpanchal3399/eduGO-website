@@ -49,7 +49,7 @@
                                         // $gst = $_GET['gst'];
                                         // $addr = $_GET['addr'];
                                         echo '<div class="text-center alert alert-danger" role="alert">
-                                                Invalid E-mail or Password!
+                                                Invalid Password!
                                             </div>';
                                     }
                                     else if($_GET['error'] == "nouser")

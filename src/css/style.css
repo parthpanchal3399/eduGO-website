@@ -1,8 +1,9 @@
+* {box-sizing: border-box;}
+
 body{
     overflow-x: hidden;
     font-family: 'Lato',sans-serif;
     color: #505962;
-
 }
 
 
@@ -28,7 +29,7 @@ body{
     min-height: 700px;
     height: 100%;
     overflow: hidden;
-    background-color: #05c46b;
+    background-color: #3B60E4;
     padding: 60px;
     text-align: center;
 }
@@ -141,78 +142,68 @@ div.login-form {
 
 div.login-form button.btn {
     width: 100%;
+    background-color: #3B60E4;
+    color: white;
+    border-color: #3B60E4;
+
 }
   
 
 /*==================Navigation CSS====================*/
-.navbar{
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: .1rem;
-    background: rgba(0, 0, 0, 0.6)!important;
+.navigation {
+    background-color: #1e272e!important;
 }
 
-.navbar-brand{
-    height: 3rem;
-    font-size: 2rem;
+.navigation a {
+    color: white;
+}
 
+.navigation .navbar-nav a{
+    font-weight: 600;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-.navbar-nav li{
-    padding-right: .8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: .8rem;
-    letter-spacing: .1rem;
-}
-.navbar-dark .navbar-nav .nav-link{
-    color :white;
-    padding-top: .8rem;
-}
-.navbar-dark .navbar-nav .nav-link.active,
-.navbar-dark .navbar-nav .nav-link :hover{
-    color: greenyellow; 
+
+.nav-buttons {
+    padding: 0;
+    margin-right: 20px;
 }
 
 
-/* ========LANDING PAGE========   */
-.home-inner{
-background-image: url("C:\Users\ELCOT\Desktop\EduGO\img\landing_page_img.jpg");    
+
+/* CourseDetails.php */
+
+#course-heading{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 300px;
+    background-color: #A1D6FF;
 }
 
-.caption{
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 38%;
-    z-index: 1;
+.course-heading-content{
+    padding-top: 70px;
+    padding-left: 40px;
+    color: #1e272e;
 }
-.caption h1{
-    font-size: 3rem;
-    text-shadow: .1rem .1rem .5rem grey;
-    font-weight: 700;
-    letter-spacing: .1rem ;
+
+#course-main-section{
+    background-color: #1e272e;
+
 }
-.caption h3{
-    font-size: 2rem;
-    font-weight: 500;
-    text-shadow: .1rem .05rem .1rem grey;
-    padding-bottom: 1.3rem;
+
+.course-about-heading{
+    color: white;
+    margin: auto;
 }
-.btn-lg{
-    border-width: medium;
-    border-radius: 0;
-    padding: .6rem 1.7rem;
-    font-size: 1.5rem
-     
-}
-.img{
-    display: block;
-    max-width: 300%;
+
+#course-main-section ul.list-group{
+    background-color: #1e272e;
+    color: white;
     
-    margin-right: 50%;
-    width: 50%;
 }
 
 
-
+#course-main-section  li{
+    list-style-type: square;
+}
 
