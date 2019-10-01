@@ -78,6 +78,10 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary" name="login-submit">Login</button>
                             </form>
+
+                            <div style="padding-top:20px;" class="page-links">
+                                <a href="index.php" class="active">HOME</a>
+                            </div>
                         </div>
                     </div>
                 </div>
