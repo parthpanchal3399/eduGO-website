@@ -11,9 +11,9 @@ if(isset($_POST['login-submit']))
     if($email == 'admin@edugo.com' && $password == 'admin123')
     {
         session_start();
-        $_SESSION['userId'] = $row['user_id'];
-        $_SESSION['uname'] = $row['uname'];
-        $_SESSION['email'] = $row['email'];
+        $_SESSION['userId'] = 1;
+        $_SESSION['uname'] = 'Admin';
+        $_SESSION['email'] = 'admin@edugo.com';
         header("Location: ../adminpanel.php");
         exit();
     }

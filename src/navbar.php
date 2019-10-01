@@ -13,8 +13,21 @@
   </div>
 
   <div class="navbar-right navbar-nav">
+  <?php
+    if(isset($_SESSION['userId']))
+    {
+      echo '
+      <button type="submit" name="logout-submit" class="nav-buttons btn btn-primary"><a class="nav-item nav-link" href="includes/logout.inc.php">LOGOUT</a></button>
+      ';
+    }
+    else
+    {
+      echo '
       <button type="submit" class="nav-buttons btn btn-primary"><a class="nav-item nav-link" href="login.php">LOGIN</a></button>
       <button type="submit" class="nav-buttons btn btn-primary"><a class="nav-item nav-link" href="signup.php">SIGN UP</a></button>
+      ';
+    }
+  ?> 
   </div>  
 </nav>
 
