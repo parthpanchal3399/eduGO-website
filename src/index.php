@@ -3,7 +3,6 @@
 ?>
 
 
-
 <?php
     require "footer.php"
 ?>

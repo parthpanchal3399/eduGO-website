@@ -32,7 +32,7 @@
         </div>
         <div class="row">
             <div class="col-7">
-                <h3>Syllabus</h3>
+                <h3 class="course-details">Syllabus</h3>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">Cras justo odio</li>
                     <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -42,7 +42,10 @@
                 </ul>
             </div>
             <div class="col-5">
-                <h3>Instructor</h3>
+                <h3 class="course-details" style="text-align: center;">Instructor</h3>
+                <div class="instructor">
+                    <img src="images/hitesh.png" alt="">
+                </div>
             </div>
         </div>
     </div>

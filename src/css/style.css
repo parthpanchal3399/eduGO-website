@@ -150,6 +150,7 @@ div.login-form button.btn {
   
 
 /*==================Navigation CSS====================*/
+
 .navigation {
     background-color: #1e272e!important;
 }
@@ -194,6 +195,7 @@ div.login-form button.btn {
 .course-about-heading{
     color: white;
     margin: auto;
+    padding: 30px;
 }
 
 #course-main-section ul.list-group{
@@ -204,6 +206,23 @@ div.login-form button.btn {
 
 
 #course-main-section  li{
+    padding-left: 0;
     list-style-type: square;
+}
+
+.course-details{
+    color: white;
+}
+
+.instructor {
+    text-align: center;
+}
+
+/* remove this stylying after cropping image */
+.instructor img{
+    height: 300px;
+    border-color: #3B60E4;
+    border-style: solid;
+    padding: 20px;
 }
 
