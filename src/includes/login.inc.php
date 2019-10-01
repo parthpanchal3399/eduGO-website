@@ -6,53 +6,68 @@ if(isset($_POST['login-submit']))
 
     $email = $_POST['email'];
     $password = $_POST['pwd'];
-    if(empty($email) || empty($password))
+
+    //check if user is admin
+    if($email == 'admin@edugo.com' && $password == 'admin123')
     {
-        header("Location: ../login.php?error=emptyfields");
+        session_start();
+        $_SESSION['userId'] = $row['user_id'];
+        $_SESSION['uname'] = $row['uname'];
+        $_SESSION['email'] = $row['email'];
+        header("Location: ../adminpanel.php");
         exit();
     }
     else
     {
-        $sql = "SELECT * FROM users WHERE email=?";
-        $stmt = mysqli_stmt_init($conn);
-
-        if(!mysqli_stmt_prepare($stmt, $sql))
+        //user is regular user
+        if(empty($email) || empty($password))
         {
-            header("Location: ../login.php?error=sqlerror");
+            header("Location: ../login.php?error=emptyfields");
             exit();
         }
         else
         {
-            mysqli_stmt_bind_param($stmt, "s", $email);
-            mysqli_stmt_execute($stmt);
-            $result = mysqli_stmt_get_result($stmt);
-            if($row = mysqli_fetch_assoc($result))
+            $sql = "SELECT * FROM users WHERE email=?";
+            $stmt = mysqli_stmt_init($conn);
+
+            if(!mysqli_stmt_prepare($stmt, $sql))
             {
-                $pwdCheck = password_verify($password, $row['pwd']);
-                if($pwdCheck == false)
-                {
-                    header("Location: ../login.php?error=wrongpwd");
-                    exit();
-                }
-                else if($pwdCheck == true)
-                {
-                    session_start();
-                    $_SESSION['userId'] = $row['user_id'];
-                    $_SESSION['uname'] = $row['uname'];
-                    $_SESSION['email'] = $row['email'];
-                    header("Location: ../login.php?login=success");
-                    exit();
-                }
-                else
-                {
-                    header("Location: ../login.php?error=wrongpwd");
-                    exit();
-                }
+                header("Location: ../login.php?error=sqlerror");
+                exit();
             }
             else
             {
-                header("Location: ../login.php?error=nouser");
-                exit();
+                mysqli_stmt_bind_param($stmt, "s", $email);
+                mysqli_stmt_execute($stmt);
+                $result = mysqli_stmt_get_result($stmt);
+                if($row = mysqli_fetch_assoc($result))
+                {
+                    $pwdCheck = password_verify($password, $row['pwd']);
+                    if($pwdCheck == false)
+                    {
+                        header("Location: ../login.php?error=wrongpwd");
+                        exit();
+                    }
+                    else if($pwdCheck == true)
+                    {
+                        session_start();
+                        $_SESSION['userId'] = $row['user_id'];
+                        $_SESSION['uname'] = $row['uname'];
+                        $_SESSION['email'] = $row['email'];
+                        header("Location: ../login.php?login=success");
+                        exit();
+                    }
+                    else
+                    {
+                        header("Location: ../login.php?error=wrongpwd");
+                        exit();
+                    }
+                }
+                else
+                {
+                    header("Location: ../login.php?error=nouser");
+                    exit();
+                }
             }
         }
     }

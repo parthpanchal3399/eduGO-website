@@ -230,3 +230,16 @@ div.login-form button.btn {
 .center {
     margin: auto;
 }
+
+
+
+/* Viewcourse */
+.video-container{
+    margin: auto;
+    width: 80%;
+}
+
+.video-container iframe{
+    padding: 20px;
+
+}
