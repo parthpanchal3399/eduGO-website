@@ -19,41 +19,57 @@
                 <h1>Courses</h1>
             </div>
         </div>
-        <div class="row center">
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                <img height="150px" class="card-img-top" src="images/hitesh.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML Crash Course</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Step One for you to become the Creator on Web.</h6>
-                        <a href="#" class="card-link">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                <img height="150px" class="card-img-top" src="images/hitesh.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML Crash Course</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Step One for you to become the Creator on Web.</h6>
-                        <a href="#" class="card-link">Learn More</a>
-                    </div>
-                </div>
-            </div>
+        <?php
+            require 'includes/dbh.inc.php';
+            $result = mysqli_query($conn, "SELECT * FROM courses");
+            $countRows = mysqli_num_rows($result);
+            if($countRows > 0)
+            {
+                $cols = 3;    // Define number of columns
+                $counter = 1;     // Counter used to identify if we need to start or end a row
+                $nbsp = $cols - ($countRows % $cols);    // Calculate the number of blank columns
+                
+                $row_class = 'row';    // Row class name
+                $col_class = 'col-4'; // Column class name
 
 
-            <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                <img height="150px" class="card-img-top" src="images/hitesh.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML Crash Course</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Step One for you to become the Creator on Web.</h6>
-                        <a href="#" class="card-link">Learn More</a>
-                    </div>
-                </div>
-            </div>
+                while ($item = mysqli_fetch_array($result))
+                {
+                    if(($counter % $cols) == 1) // Check if it's new row
+                    {    
+                        echo '<div style="padding-top: 20px;" class="'.$row_class.'">';	// Start a new row
+                    }
+                    echo '
+                        <div class="'.$col_class.'">
+                            <div class="card center" style="width: 18rem;">
+                            <img height="200px" class="card-img-top" src="images/uploads/'. $item['thumbnail'] .'" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">'. $item['course_name'] .'</h5>
+                                                <h6 class="card-subtitle mb-2 text-muted">'. $item['dsc'] .'</h6>
+                                                <a href="#" class="card-link">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
 
-        </div>
+                    ';
+                    if(($counter % $cols) == 0)
+                    { // If it's last column in each row then counter remainder will be zero
+                        echo '</div>';	 //  Close the row
+                    }
+                    $counter++;    // Increase the counter
+                    
+                }
+                if($nbsp > 0)
+                { // Adjustment to add unused column in last row if they exist
+                    for ($i = 0; $i < $nbsp; $i++)
+                    { 
+                        echo '<div class="'.$col_class.'">&nbsp;</div>';		
+                    }
+                    echo '</div>';  // Close the row
+                }
+            }
+        
+            echo '
     </div>
-</div>
+</div>';
+?>

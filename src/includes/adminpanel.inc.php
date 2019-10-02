@@ -1,4 +1,5 @@
 <?php
+
     if(isset($_POST['add-course']))
     {
         require 'dbh.inc.php';
@@ -13,9 +14,12 @@
 
         $link = substr($fullLink, strpos($fullLink, "=") + 1);  //Get Playlist Link
 
+
+        //FILE path for uploads:
+        $targetInstructorImg = "../images/uploads/".basename($_FILES['instructorImg']['name']);
+        $targetThumbnail = "../images/uploads/".basename($_FILES['thumbnail']['name']);
+        
         //For FILES upload
-        $instructorImgData = mysqli_real_escape_string($conn, file_get_contents($_FILES['instructorImg']['tmp_name']));
-        $thumbnailData = mysqli_real_escape_string($conn, file_get_contents($_FILES['thumbnail']['tmp_name']));
         $instructorImgType = mysqli_real_escape_string($conn, $_FILES['instructorImg']['type']);
         $thumbnailType = mysqli_real_escape_string($conn, $_FILES['thumbnail']['type']);
         if(empty($courseName) || empty($description) || empty($syllabus) || empty($instructorName) || empty($fullLink))
@@ -27,9 +31,13 @@
         {
             if(substr($instructorImgType,0,5) == 'image' && substr($thumbnailType,0,5) == 'image')
             {
-                mysqli_query($conn, "INSERT INTO courses(course_id, course_name, dsc, syllabus, instructor, instructor_img, link, thumbnail) VALUES('', '$courseName', '$description', '$syllabus', '$instructorName', '$instructorImgData', '$link', '$thumbnailData')");
-                header("Location: ../adminpanel.php?courseadded");
-                exit();
+                mysqli_query($conn, "INSERT INTO courses(course_id, course_name, dsc, syllabus, instructor, instructor_img, link, thumbnail) VALUES('', '$courseName', '$description', '$syllabus', '$instructorName', '$instructorImg', '$link', '$thumbnail')");
+                if(move_uploaded_file($_FILES['instructorImg']['tmp_name'], $targetInstructorImg) && move_uploaded_file($_FILES['thumbnail']['tmp_name'], $targetThumbnail))
+                {
+                    header("Location: ../adminpanel.php?courseadded");
+                    exit();
+                }
+                
             }
             else
             {
