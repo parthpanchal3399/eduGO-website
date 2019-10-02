@@ -25,12 +25,12 @@
             $countRows = mysqli_num_rows($result);
             if($countRows > 0)
             {
-                $cols = 3;    // Define number of columns
+                $cols = 4;    // Define number of columns
                 $counter = 1;     // Counter used to identify if we need to start or end a row
                 $nbsp = $cols - ($countRows % $cols);    // Calculate the number of blank columns
                 
                 $row_class = 'row';    // Row class name
-                $col_class = 'col-4'; // Column class name
+                $col_class = 'col-3'; // Column class name
 
 
                 while ($item = mysqli_fetch_array($result))

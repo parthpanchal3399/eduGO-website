@@ -9,6 +9,13 @@
       <a class="nav-item nav-link active" href="#">HOME</a>
       <a class="nav-item nav-link" href="browsecourses.php">COURSES</a>
       <a class="nav-item nav-link" href="#">ABOUT US</a>
+
+      <?php
+        if($_SESSION['userId'] == 1 && $_SESSION['email'] == 'admin@edugo.com')
+        {
+          echo '<a class="nav-item nav-link" href="adminpanel.php">ADD COURSE</a>';
+        }
+      ?>
     </div>
   </div>
 
