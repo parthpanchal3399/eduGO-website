@@ -7,6 +7,53 @@ body{
 }
 
 
+
+/* Index page  */
+
+.indbody{
+    font-family: 'Lato',sans-serif;
+    height : 100vh;
+    /*yaha pe sirf ek acha image uthake dalde
+    baki color aur baki ke maine uske jaise hi kiye dusra kuch rakhna hai to bhi kar de */
+    background: white url() no-repeat center center / cover;
+    color : white;
+    overflow: hidden;
+}
+
+.container11{
+    background-color: #1e272e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0 3rem;    
+}
+
+h1,h2{
+    font-weight: 200;
+    margin : 0.4rem;
+}
+
+@media(min-width: 1200px){
+    h1{
+        font-size: 4.5rem;
+    }    
+    h2{
+        font-size: 3rem;
+    }
+}
+
+/*cursor  */
+.txt-type > .txt{
+    border-right: 0.2rem solid #777;
+}
+.hi{
+    background-color: white;
+    height: 100vh;
+}
+
+
+
 /*====================== Login Page CSS_pp==============================*/
 
 .website-logo {
@@ -243,3 +290,4 @@ div.login-form button.btn {
     padding: 20px;
 
 }
+
