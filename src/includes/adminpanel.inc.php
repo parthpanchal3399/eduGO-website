@@ -12,8 +12,8 @@
         $instructorImg = mysqli_real_escape_string($conn, $_FILES['instructorImg']['name']);
         $thumbnail = mysqli_real_escape_string($conn, $_FILES['thumbnail']['name']);
 
-        $link = substr($fullLink, strpos($fullLink, "=") + 1);  //Get Playlist Link
-
+        $link = substr($fullLink, strpos($fullLink, "list=") + 5);  //Get Playlist Link
+        echo $link;
 
         //FILE path for uploads:
         $targetInstructorImg = "../images/uploads/".basename($_FILES['instructorImg']['name']);

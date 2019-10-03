@@ -46,7 +46,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">'. $item['course_name'] .'</h5>
                                                 <h6 class="card-subtitle mb-2 text-muted">'. $item['dsc'] .'</h6>
-                                                <a href="#" class="card-link">Learn More</a>
+                                                <a href="coursedetails.php?courseId='  .$item['course_id'].  '" class="card-link">Learn More</a>
                                 </div>
                             </div>
                         </div>
