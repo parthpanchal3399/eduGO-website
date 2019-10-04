@@ -59,6 +59,12 @@
                                             </div>';
                                     }
                                 }
+                                else if(isset($_GET['pleaselogin']))
+                                {
+                                    echo '<div class="text-center alert alert-danger" role="alert">
+                                                Please Login In to Continue!
+                                            </div>';
+                                }
                                 else if(isset($_GET['login']) == "success")
                                 {
                                     header("refresh:2; url=login.php");
