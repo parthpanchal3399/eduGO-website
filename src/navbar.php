@@ -11,9 +11,12 @@
       <a class="nav-item nav-link" href="#">ABOUT US</a>
 
       <?php
-        if($_SESSION['userId'] == 1 && $_SESSION['email'] == 'admin@edugo.com')
+        if(isset($_SESSION['userId']))
         {
-          echo '<a class="nav-item nav-link" href="adminpanel.php">ADD COURSE</a>';
+          if($_SESSION['userId'] == 1 && $_SESSION['email'] == 'admin@edugo.com')
+          {
+            echo '<a class="nav-item nav-link" href="adminpanel.php">ADD COURSE</a>';
+          }
         }
       ?>
     </div>

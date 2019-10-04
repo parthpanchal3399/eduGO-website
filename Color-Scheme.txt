@@ -1,3 +1,5 @@
 Dark Grey(Login Section Right) #1e272e
 Vibrant Blue (Buttons and Login Left) #3B60E4
 Light Blue(Middle Sections) #A1D6FF
+
+ Dark grey for card background: #2E3D47
