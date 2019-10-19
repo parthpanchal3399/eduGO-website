@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 04, 2019 at 12:00 PM
+-- Generation Time: Oct 19, 2019 at 06:26 PM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.1.30
 
@@ -44,7 +44,7 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`course_id`, `course_name`, `dsc`, `syllabus`, `instructor`, `instructor_img`, `link`, `thumbnail`) VALUES
-(1, 'JavaScript', 'Js', 'learn ja,projects,lol,test', 'Hitesh Chodhary', 'hitesh.PNG', 'dlfrWbYk1v0&list=PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP', 'learning.png'),
+(1, 'JavaScript', 'Js', 'learn ja,projects,lol,test', 'Hitesh Chodhary', 'hitesh.PNG', 'PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP', 'learning.png'),
 (2, 'Web Dev', 'webdev', 'html,css,js', 'Devslops', '153939.JPG', 'PLwoh6bBAszPrES-EOajos_E9gvRbL27wz', '1280-avengersendgame-helmet-1544196558582_1280w.jpg'),
 (3, 'Networking', 'Networking', 'networking', 'NetworKING', 'dvdlol.png', 'PLh94XVT4dq02frQRRZBHzvj2hwuhzSByN', 'jared_joker_leto-wallpaper-1920x1080.jpg'),
 (4, 'Test', 'test', 'test', 'TEST', 'dvdlol.png', 'PLLOxZwkBK52AE9jFVOGZTJxaiAC_xB8Yy', 'Photo from âš¡HtraPâš¡.jpg');
@@ -59,6 +59,14 @@ CREATE TABLE `subscriptions` (
   `usr_id` int(11) NOT NULL,
   `crs_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `subscriptions`
+--
+
+INSERT INTO `subscriptions` (`usr_id`, `crs_id`) VALUES
+(1, 2),
+(1, 1);
 
 -- --------------------------------------------------------
 
