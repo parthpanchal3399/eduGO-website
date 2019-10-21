@@ -287,6 +287,25 @@ a.learnmore {
     margin-top: auto;
   }
 
+.inbody{
+    font-family: 'Lato',sans-serif;
+    height: inherit;
+    /*yaha pe sirf ek acha image uthake dalde
+    baki color aur baki ke maine uske jaise hi kiye dusra kuch rakhna hai to bhi kar de 
+    background: white url() no-repeat center center / cover;*/
+    
+    color :#1e272e;
+}
+
+.container-browse-courses{
+    background-color: #A1D6FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: inherit;
+    padding: 0 3rem;    
+}
+
 
 /* Viewcourse */
 .video-container{
@@ -299,3 +318,9 @@ a.learnmore {
 
 }
 
+
+/* mycourses */
+.jumbotron {
+    text-align: center;
+    background: none;
+}

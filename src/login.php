@@ -67,7 +67,7 @@
                                 }
                                 else if(isset($_GET['login']) == "success")
                                 {
-                                    header("refresh:2; url=login.php");
+                                    header("refresh:2; url=mycourses.php");
                                     echo '<div class="text-center alert alert-success" role="alert">
                                                 Login Successful! Redirecting .... 
                                             </div>';

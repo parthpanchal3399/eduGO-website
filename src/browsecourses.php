@@ -8,7 +8,22 @@
 
 
 <div class="row" id="course-heading">
-
+    <div class="col-12">
+        <div class="inbody">
+            <div class="container-browse-courses">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="contrainer">
+                        <h1 class="display-4">Learn 
+                            <!--this span will then be called in javascript and values will be taken -->
+                            <span class="txt-type" data-wait="1000" data-words = '["JavaScript" , "Data Structures" , "Java", "Python", "Computer Graphics", "DBMS"]'></span>
+                            <br>
+                        </h1>
+                        <p class="lead">Engineering Concepts on the GO!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -72,4 +87,9 @@
             echo '
     </div>
 </div>';
+?>
+
+
+<?php
+        require "footer.php"
 ?>

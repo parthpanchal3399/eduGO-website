@@ -6,17 +6,38 @@
         require "navbar.php"
 ?>
 
+<?php
+    if(!isset($_SESSION['userId'])) //if user is NOT LOGGED IN
+    {
+        header("Location: login.php?pleaselogin");
+        exit();
+    }
+    else
+    {   //User is LOGGED IN
+        $uname = $_SESSION['uname'];
+        echo '
+        <div class="row" id="course-heading">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <div class="container">
+                        <h1 class="display-3">Hello ' .$uname. '</h1>
+                        <p class="lead">Start Exploring | Start Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        ';
+    }
+?>
 
-<div class="row" id="course-heading">
 
-</div>
 
 
 <div id="course-main-section">
     <div class="container-fluid">
         <div class="row">
             <div class="course-about-heading"> 
-                <h1>Courses</h1>
+                <h1>Your Courses</h1>
             </div>
         </div>
         <?php
