@@ -8,7 +8,7 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="index.php">HOME</a>
       <a class="nav-item nav-link" href="browsecourses.php">COURSES</a>
-      <a class="nav-item nav-link" href="#">ABOUT US</a>
+      <a class="nav-item nav-link" href="aboutus.php">ABOUT US</a>
 
       <?php
         if(isset($_SESSION['userId']))

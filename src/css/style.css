@@ -324,3 +324,23 @@ a.learnmore {
     text-align: center;
     background: none;
 }
+
+
+/* aboutus.php */
+.about-us {
+    padding: 30px;
+}
+
+.about-us img {
+    border-radius: 50%;
+}
+
+div.icons a {
+    display: inline;
+    padding: 30px;
+}
+
+div.icons a i {
+    padding-top: 20px;
+    font-size: 40px;
+}

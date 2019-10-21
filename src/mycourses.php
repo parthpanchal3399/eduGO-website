@@ -20,7 +20,7 @@
             <div class="col-12">
                 <div class="jumbotron">
                     <div class="container">
-                        <h1 class="display-3">Hello ' .$uname. '</h1>
+                        <h1 class="display-3">Welcome ' .$uname. '</h1>
                         <p class="lead">Start Exploring | Start Learning</p>
                     </div>
                 </div>

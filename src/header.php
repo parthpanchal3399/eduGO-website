@@ -13,7 +13,8 @@
     <meta content="" name="description">
 
     <!-- Favicons -->
-    
+    <link href="fontawesome\css\all.css" rel="stylesheet"> 
+
 
     <!-- Google Fonts -->
     
