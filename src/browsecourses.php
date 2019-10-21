@@ -37,16 +37,16 @@
                 {
                     if(($counter % $cols) == 1) // Check if it's new row
                     {    
-                        echo '<div style="padding-top: 20px;" class="'.$row_class.'">';	// Start a new row
+                        echo '<div style="padding-top: 50px;" class="'.$row_class.'">';	// Start a new row
                     }
                     echo '
                         <div class="'.$col_class.'">
-                            <div class="card center" style="width: 18rem;">
+                            <div class="card center h-100" style="width: 18rem;">
                             <img height="200px" class="card-img-top" src="images/uploads/'. $item['thumbnail'] .'" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">'. $item['course_name'] .'</h5>
                                                 <h6 class="card-subtitle mb-2 text-muted">'. $item['dsc'] .'</h6>
-                                                <a href="coursedetails.php?courseId='  .$item['course_id'].  '" class="card-link">Learn More</a>
+                                                <a class="learnmore" href="coursedetails.php?courseId='  .$item['course_id'].  '" class="card-link">Learn More</a>
                                 </div>
                             </div>
                         </div>

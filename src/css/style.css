@@ -278,6 +278,14 @@ div.login-form button.btn {
     margin: auto;
 }
 
+.card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+a.learnmore {
+    margin-top: auto;
+  }
 
 
 /* Viewcourse */

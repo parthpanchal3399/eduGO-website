@@ -47,7 +47,7 @@
             </div>
             <div class="form-group">
                 <label for="InputDesc">Description</label>
-                <input type="text-area" class="form-control" id="InputDesc" name="description" placeholder="Description">
+                <input type="text-area"  maxlength = "170" class="form-control" id="InputDesc" name="description" placeholder="Description(170 Characters)">
             </div>
             <div class="form-group">
                 <label for="InputSyllabus">Syllabus</label>

@@ -13,7 +13,6 @@
         $thumbnail = mysqli_real_escape_string($conn, $_FILES['thumbnail']['name']);
 
         $link = substr($fullLink, strpos($fullLink, "list=") + 5);  //Get Playlist Link
-        echo $link;
 
         //FILE path for uploads:
         $targetInstructorImg = "../images/uploads/".basename($_FILES['instructorImg']['name']);
@@ -29,6 +28,7 @@
         }
         else
         {
+
             if(substr($instructorImgType,0,5) == 'image' && substr($thumbnailType,0,5) == 'image')
             {
                 mysqli_query($conn, "INSERT INTO courses(course_id, course_name, dsc, syllabus, instructor, instructor_img, link, thumbnail) VALUES('', '$courseName', '$description', '$syllabus', '$instructorName', '$instructorImg', '$link', '$thumbnail')");
