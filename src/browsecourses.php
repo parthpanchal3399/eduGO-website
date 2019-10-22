@@ -27,7 +27,7 @@
 </div>
 
 
-<div id="course-main-section">
+<div id="course-main-section" style="padding-bottom: 50px;">
     <div class="container-fluid">
         <div class="row">
             <div class="course-about-heading"> 
@@ -91,5 +91,5 @@
 
 
 <?php
-        require "footer.php"
+    require "footer.php"
 ?>

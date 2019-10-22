@@ -12,7 +12,7 @@
     {
         //if user is admin then display Admin panel
     ?>
-<div class="container">
+<div class="container" style="padding-bottom:20px;">
     <div>
         <?php
             if(isset($_GET['error']) == 'emptyfields')

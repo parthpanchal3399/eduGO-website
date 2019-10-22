@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 19, 2019 at 06:26 PM
+-- Generation Time: Oct 22, 2019 at 08:51 PM
 -- Server version: 10.3.15-MariaDB
 -- PHP Version: 7.1.30
 
@@ -44,10 +44,10 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`course_id`, `course_name`, `dsc`, `syllabus`, `instructor`, `instructor_img`, `link`, `thumbnail`) VALUES
-(1, 'JavaScript', 'Js', 'learn ja,projects,lol,test', 'Hitesh Chodhary', 'hitesh.PNG', 'PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP', 'learning.png'),
-(2, 'Web Dev', 'webdev', 'html,css,js', 'Devslops', '153939.JPG', 'PLwoh6bBAszPrES-EOajos_E9gvRbL27wz', '1280-avengersendgame-helmet-1544196558582_1280w.jpg'),
-(3, 'Networking', 'Networking', 'networking', 'NetworKING', 'dvdlol.png', 'PLh94XVT4dq02frQRRZBHzvj2hwuhzSByN', 'jared_joker_leto-wallpaper-1920x1080.jpg'),
-(4, 'Test', 'test', 'test', 'TEST', 'dvdlol.png', 'PLLOxZwkBK52AE9jFVOGZTJxaiAC_xB8Yy', 'Photo from âš¡HtraPâš¡.jpg');
+(1, 'Javascript', 'Learn Javascript from scratch to finish', 'Introduction,Variables,Conditional Loops, Loops,Objects in JS,Form Validation & Advanced Topics', 'Hitesh Choudhary', 'hitesh.PNG', 'PLRAV69dS1uWTSu9cVg8jjXW8jndOYYJPP', 'javascript.jpg'),
+(2, 'DBMS & SQL', 'DBMS Tutorial for Beginners is an amazing tutorial series to understand about Database Management System.', 'Overview of DBMS,Database Architecture,ER Model: Basic Concepts,Relational Algebra,Types of Database key,Introduction to Normalization,SQL Intoduction', 'Sanchit Jain', 'SanchitJain.JPG', 'PLmXKhU9FNesR1rSES7oLdJaNFgmuj0SYV', 'dbms-thumbnail.png'),
+(3, 'Algorithms', 'Learn about Sorting Algorithms, Searching Algorithms, basic and advanced Data Structures in this amazing Tutorial series.', 'Introduction to Data Structures,Asymptotic Notations,Complexity Analysis,Introduction to Search Algorithms,Introduction to Sorting,Advanced Algorithms', 'Abdul Bari', 'abdulbari.jpg', 'PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O', 'algorithms.jpg'),
+(4, 'PHP', 'PHP Tutorial for Beginners is an amazing tutorial series to understand the basics of PHP scripting language', 'What is PHP?,Install PHP,First PHP Example, PHP Variables,PHP Operators,PHP if...elseif...else,Loops,Functions,Advanced PHP', 'mmtuts', 'mmtuts.jpg', 'PL0eyrZgxdwhwBToawjm9faF1ixePexft-', 'phpthumb.jpg');
 
 -- --------------------------------------------------------
 
@@ -65,7 +65,6 @@ CREATE TABLE `subscriptions` (
 --
 
 INSERT INTO `subscriptions` (`usr_id`, `crs_id`) VALUES
-(1, 2),
 (1, 1);
 
 -- --------------------------------------------------------

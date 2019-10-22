@@ -31,7 +31,7 @@
                     ';
 
                     echo '
-                    <div id="course-main-section">
+                    <div id="course-main-section" style="padding-bottom: 50px;">
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-12">

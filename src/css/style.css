@@ -197,6 +197,10 @@ div.login-form button.btn {
   
 
 /*==================Navigation CSS====================*/
+nav {
+    -webkit-box-shadow: 0px 7px 28px 0px rgba(0,0,0,0.64); 
+    box-shadow: 0px 7px 28px 0px rgba(0,0,0,0.64);
+}
 
 .navigation {
     background-color: #1e272e!important;
@@ -216,6 +220,8 @@ div.login-form button.btn {
     padding: 0;
     margin-right: 20px;
 }
+
+
 
 
 
@@ -343,4 +349,62 @@ div.icons a {
 div.icons a i {
     padding-top: 20px;
     font-size: 40px;
+}
+
+div.address p.hello {
+    color:  #a6a6a6;
+}
+
+div.address h3.site-name {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+div.address p {
+    font-size: 20px;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #1e272e;
+    -webkit-box-shadow: 0px -7px 28px 0px rgba(0,0,0,0.64); 
+    box-shadow: 0px -7px 28px 0px rgba(0,0,0,0.64);
+    color: white;
+}
+
+.foorter-heading {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.footer-left-desc p{
+    margin: 0;
+}
+
+.footer-links {
+    margin: auto;
+}
+
+.footer-links ul{
+    list-style: none;
+    
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #A1D6FF;
+}
+
+.footer-links ul li a:hover {
+    color: #3B60E4;
+}
+
+
+.copyright {
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 5px;
 }

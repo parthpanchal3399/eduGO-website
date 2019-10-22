@@ -22,6 +22,7 @@
                         <!--this span will then be called in javascript and values will be taken -->
                         <span class="txt-type" data-wait="1000" data-words = '["JavaScript" , "Data Structures" , "Java", "Python", "Computer Graphics", "DBMS"]'></span>
                         <br>
+                        <script src="js/main.js"></script>
                     </h1>
                     <p class="lead">Engineering Concepts on the GO!!</p>
                 </div>
@@ -30,7 +31,3 @@
     </div>
 </body>
 </html>
-
-<?php
-    require "footer.php"
-?>

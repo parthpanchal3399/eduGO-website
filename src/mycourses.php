@@ -33,7 +33,7 @@
 
 
 
-<div id="course-main-section">
+<div id="course-main-section" style="padding-bottom: 60px;">
     <div class="container-fluid">
         <div class="row">
             <div class="course-about-heading"> 
@@ -97,4 +97,9 @@
         </div>
     </div>';
             }
+?>
+
+
+<?php
+    require "footer.php"
 ?>
