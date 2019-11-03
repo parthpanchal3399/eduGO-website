@@ -39,7 +39,7 @@
                     </div>
                     <div class="card-body">
                         <h2 class="card-title center">Parth Panchal</h2>
-                        <h6 class="card-subtitle mb-2 text-muted center">Our aim was to make BEST content available at one place</h6><br><br>
+                        <h6 class="card-subtitle mb-2 text-muted center">Our aim was to make BEST content available at one place &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h6><br><br>
                         <div class="icons center">
                             <a href="https://www.facebook.com/HtraP1001"><i class="fab fa-facebook-square"></i></a>
                             <a href="https://www.instagram.com/htrap_1001/"><i class="fab fa-instagram"></i></a>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="card-body">
                         <h2 class="card-title center">Veerapathiramoorthy Pillai</h2>
-                        <h6 class="card-subtitle mb-2 text-muted center">We wanted to reduce student's stress of finding the Best tutorials before exams</h6>
+                        <h6 class="card-subtitle mb-2 text-muted center">We wanted to reduce student's stress of finding the Best tutorials</h6>
                         <div class="icons center">
                             <a href="https://www.facebook.com/veerapathiramoorthy.pillai"><i class="fab fa-facebook-square"></i></a>
                             <a href="https://www.instagram.com/vo_lambe_naam_wala/"><i class="fab fa-instagram"></i></a>

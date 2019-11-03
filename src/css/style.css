@@ -225,6 +225,7 @@ nav {
 
 
 
+
 /* CourseDetails.php */
 
 #course-heading{
@@ -407,4 +408,17 @@ footer {
     padding-top: 25px;
     text-align: center;
     padding-bottom: 5px;
+}
+
+
+
+/* ################################## Mobile Responsive ################################################## */
+@media only screen and (max-width: 600px) {
+    .nav-buttons {
+        margin: 5px;
+    }
+
+    div.jumbotron .display-2 {
+        font-size: 60px;
+    }
 }
