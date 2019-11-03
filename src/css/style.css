@@ -342,6 +342,10 @@ a.learnmore {
     border-radius: 50%;
 }
 
+.about-us-card {
+    width: 70%;
+}
+
 div.icons a {
     display: inline;
     padding: 30px;
@@ -414,11 +418,25 @@ footer {
 
 /* ################################## Mobile Responsive ################################################## */
 @media only screen and (max-width: 600px) {
+    /* Navbar */
     .nav-buttons {
         margin: 5px;
     }
 
     div.jumbotron .display-2 {
         font-size: 60px;
+    }
+
+    /* About Us */
+    .about-us-card {
+        width: 90%;
+    }
+
+    .about-us-div {
+        padding-top: 20px;
+    }
+
+    .about-us-map iframe {
+        width: 100%;
     }
 }
