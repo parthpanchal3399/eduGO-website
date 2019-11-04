@@ -55,7 +55,7 @@
                         <img  class="card-img-top" src="images/Veer.jpg" alt="Card image cap">  
                     </div>
                     <div class="card-body">
-                        <h2 class="card-title center about-us-name" style="text-align: center;">Veerapathiramoorthy Pillai</h2>
+                        <h2 class="card-title center about-us-name" style="text-align: center;">Veerapathiramoorthy Pillai</h2><br>
                         <h6 class="card-subtitle mb-2 text-muted center" style="text-align: center;">We wanted to reduce student's stress of finding the Best tutorials</h6>
                         <div class="icons center">
                             <a href="https://www.facebook.com/veerapathiramoorthy.pillai"><i class="fab fa-facebook-square"></i></a>
