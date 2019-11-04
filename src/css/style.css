@@ -512,5 +512,17 @@ footer {
         font-size: 140%;
     }
 
+    #course-heading {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.jumbotron .display-3 {
+        font-size: 60px;
+    }
+
+    div.jumbotron p {
+        font-size: 15px;
+    }
 
 }
