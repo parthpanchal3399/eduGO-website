@@ -432,11 +432,56 @@ footer {
         width: 90%;
     }
 
-    .about-us-div {
+    .about-us-name {
+        font-size: 160%;
+    }
+
+    div.icons a i {
         padding-top: 20px;
+        font-size: 120%;
+    }
+
+    .about-us-div {
+        padding-top: 5%;
     }
 
     .about-us-map iframe {
         width: 100%;
     }
+
+    /* Browse Courses */
+
+    div.container h1.display-4 {
+        font-size: 50%;
+    }
+
+    #course-heading {
+        width: 100%;
+        margin: 0;
+    }
+
+    .browse-course-card {
+        width: 95%;
+    }
+
+    .browse-course-div {
+        padding-top: 4%;
+    }
+}
+
+
+/* Much Smaller Devices */
+@media only screen and (max-width: 340px) {
+    /* About Us */
+
+    .about-us-card {
+        width: 100%;
+    }
+
+
+    .about-us-name {
+        font-size: 140%;
+    }
+
+
 }

@@ -8,7 +8,7 @@
 
 
 <div class="row" id="course-heading">
-    <div class="col-12">
+    <div class="col-lg-12 col-sm-12">
         <div class="inbody">
             <div class="container-browse-courses">
                 <div class="jumbotron jumbotron-fluid">
@@ -45,7 +45,7 @@
                 $nbsp = $cols - ($countRows % $cols);    // Calculate the number of blank columns
                 
                 $row_class = 'row';    // Row class name
-                $col_class = 'col-3'; // Column class name
+                $col_class = 'col-lg-3'; // Column class name
 
 
                 while ($item = mysqli_fetch_array($result))
@@ -55,8 +55,8 @@
                         echo '<div style="padding-top: 50px;" class="'.$row_class.'">';	// Start a new row
                     }
                     echo '
-                        <div class="'.$col_class.'">
-                            <div class="card center h-100" style="width: 18rem;">
+                        <div class="browse-course-div col-sm-12 '.$col_class.'">
+                            <div class="card center h-100 browse-course-card">
                             <img height="200px" class="card-img-top" src="images/uploads/'. $item['thumbnail'] .'" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">'. $item['course_name'] .'</h5>
