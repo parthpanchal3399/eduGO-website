@@ -6,7 +6,7 @@
     <div class="website-logo">
         <a href="index.php">
             <div>
-                <img height="90px" src="images/logo2.png" alt="logo">
+                <img src="images/logo2.png" alt="logo">
             </div>
         </a>
     </div>
@@ -21,7 +21,7 @@
         </div>
 
         <div class="col-lg-8 login-section"> <!-- Login Section -->
-            <div class="form-holder">   
+            <div class="form-holder login-form-mobile">   
                 <div class="form-content">
                     <div class="form-items">
                         <h3>eduGO</h3>

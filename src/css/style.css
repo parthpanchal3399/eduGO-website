@@ -66,6 +66,9 @@ body{
     bottom: initial;
 }
 
+.website-logo img {
+    height: 90px;
+}
 
 .img-holder {
     display: inline-block;
@@ -466,6 +469,32 @@ footer {
 
     .browse-course-div {
         padding-top: 4%;
+    }
+
+
+    /* Login */
+    .website-logo {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .website-logo img {
+        height: 50px;
+    }
+
+    .img-holder {
+        display: none;
+    }
+
+    .login-form-mobile {
+        margin-top: 25px;
+    }
+
+    /* Footer */
+    .footer-links {
+        padding: 0;
     }
 }
 

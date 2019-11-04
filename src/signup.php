@@ -22,7 +22,7 @@
 
 
         <div class="col-lg-8 login-section"> <!-- Signup Section -->
-            <div class="form-holder">   
+            <div class="form-holder login-form-mobile">   
                 <div class="form-content">
                     <div class="form-items">
                         <h3>eduGO</h3>
