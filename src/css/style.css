@@ -492,6 +492,27 @@ footer {
         margin-top: 25px;
     }
 
+
+
+
+    /* Course Details */
+    .course-learning-img img {
+        display: none;
+    }
+
+    .course-about-heading h1{
+        font-size: 150%;
+    }
+
+    .instructor-mobile {
+        padding-top: 20px;
+    }
+
+    
+    .instructor-mobile h4 {
+        padding-top: 15px;
+    }
+
     /* Footer */
     .footer-links {
         padding: 0;

@@ -19,7 +19,7 @@
         {
             echo '
         <div class="row" id="course-heading">
-            <div class="col-6">
+            <div class="col-lg-6">
                 <div class="course-heading-content">
                     <h1>'. $item['course_name']. '</h1>
                     <p>'. $item['dsc']. '</p>';
@@ -58,7 +58,7 @@
                                 
                         </div>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
                 <div class="course-learning-img">
                     <img src="images/learning.png" alt="">
                 </div>
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-7">
+                        <div class="col-lg-7 col-sm-12">
                             <h3 class="course-details">Syllabus</h3>
                             <ul class="list-group list-group-flush">';
 
@@ -89,7 +89,7 @@
                         echo '
                             </ul>
                         </div>
-                        <div class="col-5">
+                        <div class="col-lg-5 col-sm-12 instructor-mobile">
                             <h3 class="course-details" style="text-align: center;">Instructor</h3>
                             <div class="instructor">
                                 <img src="images/uploads/'. $item['instructor_img']. '" alt="">
